@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - LoakPedia</title>
+    <link rel="stylesheet" href="Project_registrasi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="Project_Home.html"><img src="nadiaArtboard 1.png" alt="LoakPedia"></a> 
+            <!-- nadiaArtboard 1.png -->
+            <div class="menu">
+
+
+                <ul class="menu-links">
+
+                    <!-- search bar --> 
+                    <div class="input-box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Cari barangmu disini...">
+                        <button class="button">Cari</button>
+                    </div>
+
+                    <script>
+                        const button = document.querySelector('.button');
+                        button.addEventListener('mousedown', () => button.classList.add("clicked"))
+                        button.addEventListener('mouseup', () => button.classList.remove("clicked"))
+                    </script>
+
+                    <!-- menu -->
+                    <ul class="navigation">
+                        <li><a href="Project_Home.html">Beranda</a></li>
+                        <li><a href="#">Produk</a></li>
+                        <li><a href="#"><i class='bx bx-bell'>Notifikasi</i></a></li>
+                        <li><a href="#"><i class='bx bxs-bookmarks'>Favorit</i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'>Belanja</i></a></li>
+                        <li><a href="#"><i class='bx bx-store-alt'>Toko</i></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <h2>Registrasi</h2>
+        <form action="#">
+            <div class="input-form">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan Nama Lengkap Anda" required>
+            </div>
+            <div class="input-form">
+                <label class="special">Nama Pengguna</label>
+                <input type="text" placeholder="Masukkan Nama Pengguna Anda" required>
+            </div>
+
+            <div class="input-form">
+                <label>E-Mail</label>
+                <input type="email" placeholder="Masukkan E-Mail Anda" required>
+            </div>
+
+            <div class="input-form">
+                <label>Nomor Telepon</label>
+                <input type="tel" placeholder="Masukkan No. Telepon Anda (cth. 0895-8883-6152)" pattern="08[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+            </div>
+
+            <div class="input-form">
+                <label>Tanggal Lahir (bulan/hari/tahun)</label>
+                <input type="date"required>
+            </div>
+
+            <div class="input-form">
+                <label>Kata Sandi</label>
+                <input type="password" minlength="6" maxlength="10" placeholder="Buatlah kata sandi Anda (6-10 karakter)" required>
+            </div>
+            <div class="input-form">
+                <label>Konfirmasi</label>
+                <input type="password" minlength="6" maxlength="10" placeholder="Konfirmasikan kata sandi Anda (6-10 karakter)" required>
+            </div>
+
+            <div class="policy">
+                <input type="checkbox">
+                <h3>Saya menyetujui <a href="#">Syarat & Ketentuan</a> yang berlaku</h3>
+            </div>
+            <div class="input-form button">
+                <a href="Project_Home.html"><input type="Submit" value="Daftar Sekarang"></a>
+            </div>
+            <div class="text">
+                <h3>Sudah memiliki akun? <a href="Project_Login.html">Masuk Sekarang</a></h3>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

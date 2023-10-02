@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --body-color: #e4e9f7;
+    --nav-color: #83CF48;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    position: flex;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-color);
+    overflow: hidden;
+    display: flex;
+}
+
+nav a i{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 32px;
+    margin-left: 30px;
+}
+nav a i:hover{
+    transform: scale(.9);
+}
+
+nav p{
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/* Toko pemilik Produk */
+.store a i{
+    color: #333;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+/* Produk yang dibeli */
+.product{
+    display: flex;
+}
+
+.product img{
+    height: 21%;
+    width: 10%;
+    margin-left: 50px;
+}
+
+.product p{
+    margin-top: 65px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+/* Metode Pembayaran */
+.payment h3{
+    color: var(--nav-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.payment-menu{
+    width: 380px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.payment-menu .payment-btn{
+    display: flex;
+    height: 35px;
+    background: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px var(--nav-color);
+}
+
+.payment-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.payment-menu.active .payment-btn i{
+    transform: rotate(-180deg);
+}
+
+.payment-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 3px var(--nav-color);
+    display: none;
+}
+
+.payment-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 45px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 16px;
+    background: #fff;
+}
+
+.options .option:hover{
+    background: #f2f2f2;
+}
+
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+/* Jenis Ongkir  */
+.ongkir h3{
+    color: var(--nav-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.ongkir-menu{
+    width: 380px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.ongkir-menu .ongkir-btn{
+    display: flex;
+    height: 35px;
+    background: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px var(--nav-color);
+}
+
+.ongkir-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.ongkir-menu.active .ongkir-btn i{
+    transform: rotate(-180deg);
+}
+
+.ongkir-menu .opsi{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 3px var(--nav-color);
+    display: none;
+}
+
+.ongkir-menu.active .opsi{
+    display: block;
+}
+
+.opsi .opt{
+    display: flex;
+    height: 35px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: white;
+}
+
+.opsi .opt:hover{
+    background: #f2f2f2;
+}
+
+.opt i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.opt .opt-text{
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+/* Alamat dan Biodata */
+.address h3{
+    color: var(--nav-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.address p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/* Detail Pembayaran */
+.detail h3{
+    color: var(--nav-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.admin{
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.admin p{
+    margin-left: 900px;
+}
+
+.bongkir{
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.bongkir p{
+    margin-left: 900px;
+}
+
+.total{
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.total h5{
+    color: var(--nav-color);
+}
+
+.total p{
+    margin-left: 965px;
+    color: var(--nav-color);
+}
+
+/* Tombol */
+.bar hr{
+    border: 5px solid #eae6e6
+}
+
+.cek-button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 1040px;
+}
+
+.cek-button a button{
+    background: var(--nav-color);
+    width: 150px;
+    height: 60px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border: 2px solid var(--nav-color);
+    transition: .5s;
+}
+
+.cek-button a button:hover{
+    transform: scale(.9);
+    opacity: 0.7;
+}
+
+/* Iklan */
+.ads-image img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+}
+
+/* Footer  */
+footer{
+    position: flex;
+    background-color: #26B947;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 100px;
+    height: 3px;
+    width: 100%;
+    background: #AFAFB6;
+}
+
+footer .foot-content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .foot-content .foot-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.foot-content .foot-top .logo-details{
+    color: #fff;
+    font-size: 30px;
+}
+
+.foot-content .foot-top .media-icons{
+    display: flex;
+}
+
+.foot-content .foot-top .media-icons p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.foot-content .foot-top .media-icons a{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.foot-top .media-icons a:nth-child(2){
+    background: #4267B2;
+}
+
+.foot-top .media-icons a:nth-child(2):hover{
+    color: #4267B2;
+    background: white;
+}
+
+.foot-top .media-icons a:nth-child(3){
+    background: #1DA1F2;
+}
+
+.foot-top .media-icons a:nth-child(3):hover{
+    color: #1DA1F2;
+    background: white;
+}
+
+.foot-top .media-icons a:nth-child(4){
+    background: #E1306C;
+}
+
+.foot-top .media-icons a:nth-child(4):hover{
+    color: #E1306C;
+    background: white;
+}
+
+.foot-top .media-icons a:nth-child(5){
+    background: #0077B5;
+}
+
+.foot-top .media-icons a:nth-child(5):hover{
+    color: #0077B5;
+    background: white;
+}
+
+.foot-top .media-icons a:nth-child(6){
+    background: #FF0000;
+}
+
+.foot-top .media-icons a:nth-child(6):hover{
+    color: red;
+    background: white;
+}
+
+footer .foot-content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foot-content .link-boxes .box{
+    width: calc(100% / 4 - 10px);
+}
+
+.foot-content .link-boxes .box .link_name{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.foot-content .link-boxes .box .link_name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+}
+
+.foot-content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+}
+
+.foot-content .link-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.foot-content .link-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+footer .bottom-details{
+    margin: auto;
+    width: 100%;
+    background: darkcyan/*#0f0844*/;
+}
+
+footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.bottom-details .bottom_text a{
+    margin-right: 10px;
+}
+
+/* Responsive*/
+@media (max-width: 900px){
+    footer .foot-content .link-boxes{
+        flex-wrap: wrap;
+    }
+    footer .content .link-boxes .input-box{
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        position: relative;
+    }
+    footer::before{
+        top: 30px;
+    }
+    .foot-content .foot-top .logo-details{
+        font-size: 26px;
+    }
+    .foot-content .foot-top .media-icons a{
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .foot-content .foot-top .media-icons p{
+        font-size: 26px;
+    }
+}

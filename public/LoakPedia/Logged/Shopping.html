@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja</title>
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="Project_HomeLog.html"><img src="nadiaArtboard 1.png" alt="LoakPedia"></a> 
+
+            <div class="menu">
+
+                <ul class="menu-links">
+
+                    <!-- search bar --> 
+                    <div class="input-box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Cari barangmu disini...">
+                        <button class="button">Cari</button>
+                    </div>
+
+                    <script>
+                        const button = document.querySelector('.button');
+                        button.addEventListener('mousedown', () => button.classList.add("clicked"))
+                        button.addEventListener('mouseup', () => button.classList.remove("clicked"))
+                    </script>
+
+                    <!-- menu -->
+                    <ul class="navigation">
+                        <li><a href="Project_HomeLog.html">Beranda</a></li>
+                        <li><a href="Project_ProdukLog.html">Produk</a></li>
+                        <li><a href="#"><i class='bx bx-bell'>Notifikasi</i></a></li>
+                        <li><a href="#"><i class='bx bxs-bookmarks'>Favorit</i></a></li>
+                        <li><a href="Empty_Cart.html"><i class='bx bx-cart'>Belanja</i></a></li>
+                        <li><a href="frame_285.html"><i class='bx bx-store-alt'>Toko</i></a></li>
+                    </ul>
+                    <div class="profile">
+                        <a href="Project_Profile.html"><img src="user.png" alt=""></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cek-toko">
+        <!-- 1. Checkbox -->
+        <div class="sections">
+            <input type="checkbox">
+        </div>
+
+        <!-- 2. Nama Toko -->
+        <div class="sections">
+            <a href="#"><i class='bx bx-store-alt'>&nbsp;Bambang</i></a>
+        </div>
+    </div>
+
+    <br><hr>
+
+    <div class="cek-barang">
+        
+        <!-- 1. Checkbox -->
+        <div class="section">
+            <input type="checkbox">
+        </div>
+
+        <!-- 2. Gambar Produk -->
+        <div class="section">
+            <img src="1.jpg" alt="">
+        </div>
+
+        <!-- 3. Nama Produk -->
+        <div class="section">
+            <p>Topi Medium Wanita</p>
+        </div>
+
+        <!-- 4. Kuantitas -->
+        <div class="section">
+            <span class="minus">-</span>
+            <p>|</p>
+            <span class="num">01</span>
+            <p>|</p>
+            <span class="plus">+</span>
+
+            <script>
+                const plus = document.querySelector(".plus"), 
+                 minus = document.querySelector(".minus"),
+                 num = document.querySelector(".num");
+    
+                 let a = 1;
+    
+                 plus.addEventListener("click", ()=>{
+                    if(a < 2){ /* karena produk hanya tersisa 2, maka dibikin limit 2 */
+                        a++;
+                        a = (a < 10) ? "0" + a : a;
+                        num.innerText = a;
+                    }
+                 });
+    
+                 minus.addEventListener("click", ()=>{
+                    if(a > 1){
+                        a--;
+                        a = (a < 10) ? "0" + a : a;
+                        num.innerText = a;
+                    }
+                 });
+    
+            </script>
+        </div>
+
+        <!-- 5. Hapus -->
+        <div class="section">
+            <a href="Empty_Cart.html"><i class='bx bx-trash'>&nbsp;Hapus</i></a>
+        </div>
+    </div>
+
+    <br>
+    <div class="bar">
+        <hr>
+    </div>
+
+    <div class="cek-button">
+        <a href="Checkout.html"><button class="buy-now">Periksa</button></a>
+    </div>
+
+    <div class="ads-image">
+        <img src="iklan.jpg" alt="">
+    </div>
+
+    <footer>
+        <div class="foot-content">
+            <div class="foot-top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">LoakPedia</span>
+                </div>
+                <div class="media-icons">
+                    <p>Ikuti kami : </p>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Jelajah</li>
+                    <!-- <li><a href="#">Home</a></li> -->
+                    <li><a href="#">Kontak Media</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Mulai</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Layanan</li>
+                    <li><a href="#">Histori Pesanan</a></li>
+                    <li><a href="#">Lacak Pesanan</a></li>
+                    <li><a href="#">Diskon</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Akun</li>
+                    <li><a href="Project_Login.html">Profil</a></li>
+                    <li><a href="Project_Login.html">Akun Saya</a></li>
+                    <li><a href="#">Preferensi</a></li>
+                    <li><a href="#">Biaya</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Kategori</li>
+                    <li><a href="#">Laptop dan Komputer</a></li>
+                    <li><a href="#">Kamera dan Fotografi</a></li>
+                    <li><a href="#">Smartphone dan Tablet</a></li>
+                    <li><a href="#">Permainan Video dan Konsol</a></li>
+                    <li><a href="#">Waterproof Headphone</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2023 <a href="#">LoakPedia</a>All rights reserved</span>
+                <span class="policy_term">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

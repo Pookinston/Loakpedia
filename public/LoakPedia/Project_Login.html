@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LoakPedia</title>
+    <link rel="stylesheet" href="Project_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="Project_Home.html"><img src="nadiaArtboard 1.png" alt="LoakPedia"></a>
+            <!-- nadiaArtboard 1.png -->
+            <div class="menu">
+
+
+                <ul class="menu-links">
+
+                    <!-- search bar -->
+                    <div class="input-box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Cari barangmu disini...">
+                        <button class="button">Cari</button>
+                    </div>
+
+                    <script>
+                        const button = document.querySelector('.button');
+                        button.addEventListener('mousedown', () => button.classList.add("clicked"))
+                        button.addEventListener('mouseup', () => button.classList.remove("clicked"))
+                    </script>
+
+                    <!-- menu -->
+                    <ul class="navigation">
+                        <li><a href="Project_Home.html">Beranda</a></li>
+                        <li><a href="Project_Produk.html">Produk</a></li>
+                        <li><a href="#"><i class='bx bx-bell'>Notifikasi</i></a></li>
+                        <li><a href="#"><i class='bx bxs-bookmarks'>Favorit</i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'>Belanja</i></a></li>
+                        <li><a href="#"><i class='bx bx-store-alt'>Toko</i></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-form">
+                <label class="special">Nama Pengguna</label>
+                <input type="text" placeholder="Masukkan Nama Pengguna Anda" required>
+            </div>
+            <div class="input-form">
+                <label>Kata Sandi</label>
+                <input type="password" minlength="6" maxlength="10" placeholder="Buatlah kata sandi Anda (6-10 karakter)" required>
+            </div>
+            <div class="text">
+                <h3><a href="Project_Registrasi.html">Lupa Kata Sandi?</a></h3>
+            </div>
+            <div class="input-form button">
+                <input type="Submit" value="Daftar Sekarang">
+            </div>
+            <div class="text">
+                <h3 class="belum">Belum memiliki akun? <a href="Project_Registrasi.html">Registrasi Sekarang</a></h3>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

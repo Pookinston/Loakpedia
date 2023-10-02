@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topi Medium Wanita</title>
+    <link rel="stylesheet" href="OneItem_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="Project_Home.html"><img src="nadiaArtboard 1.png" alt="LoakPedia"></a> 
+
+            <div class="menu">
+
+                <ul class="menu-links">
+
+                    <!-- search bar --> 
+                    <div class="input-box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Cari barangmu disini...">
+                        <button class="button">Cari</button>
+                    </div>
+
+                    <script>
+                        const button = document.querySelector('.button');
+                        button.addEventListener('mousedown', () => button.classList.add("clicked"))
+                        button.addEventListener('mouseup', () => button.classList.remove("clicked"))
+                    </script>
+
+                    <!-- menu -->
+                    <ul class="navigation">
+                        <li><a href="Project_Home.html">Beranda</a></li>
+                        <li><a href="Project_Produk.html">Produk</a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-bell'>Notifikasi</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bxs-bookmarks'>Favorit</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-cart'>Belanja</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-store-alt'>Toko</i></a></li>
+                    </ul>
+                    <ul class="login-btn">
+                        <li><a href="Project_Login.html"><button class="login-popup">Login</button></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside>
+        <div class="main-image">
+            <img src="1.jpg" alt="">
+        </div>
+
+        <div class="side-image">
+            <img src="1.jpg" alt="">
+            <img src="topi.jpg" alt="">
+        </div>
+
+        <div class="socials">
+            <p>Bagikan :
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="whatsapp://send?text=This is WhatsApp sharing example using link" data-action="share/whatsapp/share"><i class="fab fa-whatsapp"></i></a>
+            </p>
+        </div>
+
+        <div class="heart-icon">
+            <h3>Favorit : </h3>
+            <i class='bx bx-heart'></i>
+            <p>3</p>
+        </div>
+    </aside>
+
+    <main>
+        <h1>Topi Medium Wanita</h1>
+        <div class="rating">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+        </div>
+        <p>Diunggah oleh : <a href="#">@Bambang</a></p>
+        <p>Diunggah pada : 27 Maret 2023</p>
+
+        <h3>Kuantitas : <span>*tersisa 2 buah</span></h3>
+        <div class="quantity">
+            <span class="minus">-</span>
+            <p>|</p>
+            <span class="num">01</span>
+            <p>|</p>
+            <span class="plus">+</span>
+        </div>
+
+        <script>
+            const plus = document.querySelector(".plus"), 
+             minus = document.querySelector(".minus"),
+             num = document.querySelector(".num");
+
+             let a = 1;
+
+             plus.addEventListener("click", ()=>{
+                if(a < 2){ /* karena produk hanya tersisa 2, maka dibikin limit 2 */
+                    a++;
+                    a = (a < 10) ? "0" + a : a;
+                    num.innerText = a;
+                }
+             });
+
+             minus.addEventListener("click", ()=>{
+                if(a > 1){
+                    a--;
+                    a = (a < 10) ? "0" + a : a;
+                    num.innerText = a;
+                }
+             });
+
+        </script>
+        
+        <div class="add-cart">
+            <a href="Project_Login.html"><button class="add-cart">Tambah ke Keranjang</button></a>
+        </div>
+        
+        <div class="buy-now">
+            <a href="Project_Login.html"><button class="buy-now">Beli Sekarang</button></a>
+        </div>        
+
+    </main>
+
+    <section class="spec-product">
+        <br><hr><br>
+        <h2>Spesifikasi Produk</h2>
+        <p>Jumlah Stok &emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;: &emsp;2 buah</p>
+        <p>Dikirim dari &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: &emsp;Kota Jakarta Barat </p>
+        <p>Terakhir digunakan &nbsp;&nbsp;&nbsp;: &emsp;21 Maret 2022</p>
+    </section>
+
+    <section class="desc-product">
+        <br><hr><br>
+        <h2>Deskripsi Produk</h2>
+        <p>
+            Dipakai oleh istri saya tanpa ada penyakit menular. 
+            Cocok bagi anda yang ingin pergi ke pantai untuk healing-healing
+            tanpa terganggu sinar matahari yang panas.
+        </p>
+    </section>
+    
+    <section class="ads-image">
+        <img src="iklan.jpg" alt="">
+    </section>
+
+    <footer>
+        <div class="foot-content">
+            <div class="foot-top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">LoakPedia</span>
+                </div>
+                <div class="media-icons">
+                    <p>Ikuti kami : </p>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Jelajah</li>
+                    <!-- <li><a href="#">Home</a></li> -->
+                    <li><a href="#">Kontak Media</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Mulai</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Layanan</li>
+                    <li><a href="#">Histori Pesanan</a></li>
+                    <li><a href="#">Lacak Pesanan</a></li>
+                    <li><a href="#">Diskon</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Akun</li>
+                    <li><a href="Project_Login.html">Profil</a></li>
+                    <li><a href="Project_Login.html">Akun Saya</a></li>
+                    <li><a href="#">Preferensi</a></li>
+                    <li><a href="#">Biaya</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Kategori</li>
+                    <li><a href="#">Laptop dan Komputer</a></li>
+                    <li><a href="#">Kamera dan Fotografi</a></li>
+                    <li><a href="#">Smartphone dan Tablet</a></li>
+                    <li><a href="#">Permainan Video dan Konsol</a></li>
+                    <li><a href="#">Waterproof Headphone</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2023 <a href="#">LoakPedia</a>All rights reserved</span>
+                <span class="policy_term">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

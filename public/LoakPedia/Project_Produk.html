@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - LoakPedia</title>
+    <link rel="stylesheet" href="Project_produk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="Project_Home.html"><img src="nadiaArtboard 1.png" alt="LoakPedia"></a> 
+            <!-- nadiaArtboard 1.png -->
+            <div class="menu">
+            
+                <ul class="menu-links">
+
+                    <!-- search bar --> 
+                    <div class="input-box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Cari barangmu disini...">
+                        <button class="button">Cari</button>
+                    </div>
+
+                    <script>
+                        const button = document.querySelector('.button');
+                        button.addEventListener('mousedown', () => button.classList.add("clicked"))
+                        button.addEventListener('mouseup', () => button.classList.remove("clicked"))
+                    </script>
+
+                    <!-- menu -->
+                    <ul class="navigation">
+                        <li><a href="Project_Home.html">Beranda</a></li>
+                        <li><a class="active" href="Project_Produk.html">Produk</a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-bell'>Notifikasi</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bxs-bookmarks'>Favorit</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-cart'>Belanja</i></a></li>
+                        <li><a href="Project_Login.html"><i class='bx bx-store-alt'>Toko</i></a></li>
+                    </ul>
+                    <ul class="login-btn">
+                        <li><a href="Project_Login.html"><button class="login-popup">Login</button></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Cari Barang Bekas</h5>
+            <h1>Hanya di </h1><br>
+            <h2>Loak</h2><h1>Pedia</h1>
+            <br>
+            <p>5B (Barang Bekas Berasa Barang Baru)</p>
+            <br>
+            <a href="Project_Produk.html" class="main-btn">Belanja Sekarang <i class='bx bxs-right-arrow-circle'></i></a>
+        </div>
+    </section>
+
+    <!-- Iklan -->
+    <section class="ads-image">
+        <img src="iklan.jpg" alt="">
+    </section>
+
+    <section class="product-categories">
+
+        <div class="center-text">
+            <h2> Semua<span> Kategori</span></h2>
+        </div>
+
+        <div class="products">
+            <div class="row"> <!-- 1. Men Fashion -->
+                <img src="menfashion.jpg" alt="">
+                <div class="con-text">
+                    <h2>Fashion Pria</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis pakaian, sepatu, topi, dasi
+                        ataupun aksesoris bekas lainnya untuk para pria yang 
+                        tampil keren dan stylish.
+                        <a href="Produk_MenFashion.html">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> <!-- 2. PC / Games -->
+                <img src="pcgame.jpg" alt="">
+                <div class="con-text">
+                    <h2>PC / Games</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis peralatan PC ataupun video games bekas. 
+                        Untuk keperluan para gamers dan juga orang-orang yang terjun dibidang 
+                        komputer.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> <!-- 3. Women Fashion -->
+                <img src="3.jpg" alt="">
+                <div class="con-text">
+                    <h2>Fashion Wanita</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis pakaian, sepatu, topi, dasi
+                        ataupun aksesoris bekas lainnya untuk para wanita untuk 
+                        selalu tampil cantik dan anggun.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> <!-- 4. Buku  -->
+                <img src="bookstationary.jpg" alt="">
+                <div class="con-text">
+                    <h2>Buku & Alat Tulis</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis buku-buku lama (buku ilmiah, novel, dll) dengan 
+                        berbagai genre ataupun bidang. Untuk keperluan kamu dan juga orang-orang 
+                        yang hobi dan suka membaca buku.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> <!-- 5. Instrument Musik-->
+                <img src="instruments.jpg" alt="">
+                <div class="con-text">
+                    <h2>Instrument Musik</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis alat-alat musik yang masih dapat digunakan 
+                        dengan baik untuk kamu yang ingin masuk ke dunia musik / lagu.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> <!-- 6. Elektronik -->
+                <img src="electronics.jpg" alt="">
+                <div class="con-text">
+                    <h2>Elektronik</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis peralatan elektronik seperti kipas angin, blender, 
+                        dan lain sebagainya. Berguna untuk keperluan rumah tangga ataupun kegiatan lainnya.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="row"> 7. Kesehatan
+                <img src="1.jpg" alt="">
+                <div class="con-text">
+                    <h2>Kesehatan</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis pakaian, sepatu, topi, dasi
+                        ataupun aksesoris bekas lainnya untuk para pria yang 
+                        tampil keren dan stylish.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> 8. Otomotif
+                <img src="2.jpg" alt="">
+                <div class="con-text">
+                    <h2>Otomotif</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis peralatan PC ataupun video games bekas. 
+                        Untuk keperluan para gamers dan juga orang-orang yang terjun dibidang 
+                        komputer.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> 9. Olahraga 
+                <img src="3.jpg" alt="">
+                <div class="con-text">
+                    <h2>Olahraga</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis pakaian, sepatu, topi, dasi
+                        ataupun aksesoris bekas lainnya untuk para wanita untuk 
+                        selalu tampil cantik dan anggun.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> 10. Fotografi
+                <img src="4.jpg" alt="">
+                <div class="con-text">
+                    <h2>Fotografi</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis buku-buku lama (buku ilmiah, novel, dll) dengan 
+                        berbagai genre ataupun bidang. Untuk keperluan kamu dan juga orang-orang 
+                        yang hobi dan suka membaca buku.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> 11. Peralatan Ruma
+                <img src="5.jpg" alt="">
+                <div class="con-text">
+                    <h2>Peralatan Rumah</h2><br><br>
+                    <p>
+                        Menyediakan berbagai jenis alat-alat musik yang masih dapat digunakan 
+                        dengan baik untuk kamu yang ingin masuk ke dunia musik / lagu.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"> 12. Ibu & Bayi 
+                <img src="6.jpg" alt="">
+                <div class="con-text">
+                    <h2>Ibu & Bayi</h2><br>
+                    <p>
+                        Menyediakan berbagai jenis peralatan PC ataupun video games bekas. 
+                        Untuk keperluan para gamers dan juga orang-orang yang terjun dibidang 
+                        komputer.
+                        <a href="#">Tampilkan lebih</a>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="foot-content">
+            <div class="foot-top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">LoakPedia</span>
+                </div>
+                <div class="media-icons">
+                    <p>Ikuti kami : </p>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Jelajah</li>
+                    <!-- <li><a href="#">Home</a></li> -->
+                    <li><a href="#">Kontak Media</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Get Started</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Layanan</li>
+                    <li><a href="#">Histori Pesanan</a></li>
+                    <li><a href="#">Lacak Pesanan</a></li>
+                    <li><a href="#">Diskon</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Akun</li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Akun Saya</a></li>
+                    <li><a href="#">Preferensi</a></li>
+                    <li><a href="#">Biaya</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Kategori</li>
+                    <li><a href="#">Laptop dan Komputer</a></li>
+                    <li><a href="#">Kamera dan Fotografi</a></li>
+                    <li><a href="#">Smartphone dan Tablet</a></li>
+                    <li><a href="#">Permainan Video dan Konsol</a></li>
+                    <li><a href="#">Waterproof Headphone</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright &#169; 2023 <a href="#">LoakPedia</a>All rights reserved</span>
+                <span class="policy_term">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
